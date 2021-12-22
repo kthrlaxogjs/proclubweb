@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes imgshow {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(img/admin.png);
+}
+
+.container .header h1 a {
+    position: absolute;
+    font-size: 160%;
+    top: 10%;
+    left: 45%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    animation: imgshow 0.6s;
+}
+
+.container .master h3 a {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 130%;
+    text-decoration: none;
+    color: white;
+    font-family:'Jua', sans-serif;
+    animation: imgshow 1s;
+}
+
+.container .master h4 a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 130%;
+    text-decoration: none;
+    color: white;
+    font-family:'Jua', sans-serif;
+    animation: imgshow 1s;
+}
+
+.container .submas h5 a {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    font-size: 130%;
+    text-decoration: none;
+    color: white;
+    font-family:'Jua', sans-serif;
+    animation: imgshow 1s;
+}

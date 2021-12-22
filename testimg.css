@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes imgshow {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.container {
+    width: 100%;
+    height: 200vh;
+    background: url(img/ppp.png);
+}
+
+.container .text h1 a {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    font-size: 70px;
+    text-decoration: none;
+    color: ivory;
+    font-family: 'Alfa Slab One', cursive;
+    animation: imgshow 0.5s;
+}
+
+.container .text h2 a {
+    position: absolute;
+    text-decoration: none;
+    color: ivory;
+    font-family: 'Alfa Slab One', cursive;
+    animation: imgshow 1.2s;
+    top: 32%;
+    left: 51%;
+    font-size: 40px;
+}
+
+.container .speed img {
+    animation: circle 1s;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    animation: imgshow 1s;
+    border: blue;
+    border-radius: 50px;
+}
+
+.container .item img {
+    animation: circle 1s;
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    animation: imgshow 2s; 
+    border:darkblue;
+    border-radius: 50px;
+}
+
+.container .speed img:hover{
+   border-style: solid;
+   border-color: coral;
+}
+
+.container .item img:hover{
+    border-style: solid;
+    border-color: coral;
+}
+
